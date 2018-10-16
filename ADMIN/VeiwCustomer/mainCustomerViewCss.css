@@ -1,0 +1,26 @@
+body{
+    background-color: gray;
+}
+thead{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color:burlywood;
+}
+tbody{
+    font-size: 15px;
+    font-style: oblique;
+}
+label{
+
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color:burlywood
+}
+h4{
+    text-align: center;
+    color: burlywood
+}

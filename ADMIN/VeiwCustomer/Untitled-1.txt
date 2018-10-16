@@ -1,0 +1,45 @@
+$output2.='<div  class="well form-horizontal container   "  id="contact_form">
+<span ><button id="insertion" class="btn  pull-right btn-info" >add</button></span><br /><br />';
+$output2.="
+<table  class=' table table-hover'> 
+<thead> 
+ <tr class='success'>
+
+ <th>NIC </th>
+ <th>MeterNO</th>
+<th> Name</th>
+<th> FatherName</th>
+<th>Gender </th>
+<th> Email</th>
+<th>Address</th>
+<th>Update</th>
+<th>Delete</th>
+</tr>
+</thead>
+<tbody> ";
+while($result2=mysqli_fetch_array($query)){
+
+
+    $output2.=" <tr class='success danger' id=". $result2['NIC'].">";
+    $output2.= "<td data-target='NIC'>".$result2['NIC']."</td>";
+  $output2.= "<td data-target='MeterNO'>". $result2['MeterNO']."</td>";
+  $output2.="<td data-target='Name'>". $result2['Name']."</td>";
+  $output2.="<td data-target='FatherName'>". $result2['FatherName']."</td>";
+  $output2.="<td data-target='Gender'>". $result2['Gender']."</td>";
+  $output2.='<td data-target="Email">'. $result2['Email'].'</td>';
+  $output2.='<td data-target="Address">'. $result2['Address'].'</td>';
+  $output2.='<td><a href="#" data-target="update" data-role="update" data-id="'. $result2['NIC'].'"><button class="btn btn-sm btn-primary"> Update</button></a></td>';
+  $output2.='<td><a href="#" data-target="delete" data-role="Delete" data-id="'. $result2['NIC'].'"><button class="btn   btn-sm btn-danger"> Delete</button></a></td>';
+  $output2.=" </tr>";
+  
+
+
+}
+$output2.="</tbody></tabel></div>";
+
+echo $output2 ;
+
+
+$sql2="SELECT * FROM registration";
+$query=mysqli_query($conn,$sql2);
+$output2="";

@@ -1,0 +1,38 @@
+body{
+
+background-color: gray;
+
+}
+thead{
+color: burlywood;
+font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+font-style: italic;
+
+}
+tbody{
+
+    font-size: 15px;
+
+}
+label{
+    color: burlywood;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    
+    }
+    .headerModel{
+
+        text-align: center;
+        color: burlywood;
+        background-color: aqua;
+        margin: 0%;
+        height: 50px;
+        line-height: 30px;
+        width: 100%;
+        margin: 0%;
+    }
+    input[type='text']{
+         font-size: 15px;
+    }
